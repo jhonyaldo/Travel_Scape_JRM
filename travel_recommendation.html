@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="img/TravelSscapeJRM.png" alt="TravelSscapeJRM" class="logo">
+        <span id="logo-text">Travel Scape JRM</span>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="travel_recommendation.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="search-container">
+        <input type="text" placeholder="Enter a destination or keyword" value="Australia">
+        <i class="fa fa-search search-icon"></i>
+        <button id="search-btn" class="search-btn">Search</button>
+        <button id="clear-btn" class="clear-btn">Clear</button>
+    </div>
+</header>
+
+
+<div class="hero-image">
+    <div class="hero-content">
+      <h1 class="hero-text">EXPLORE DREAM DESTINATION</h1>
+      <p class="hero-subtext">It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+      <button class="book-now-btn">BOOK NOW</button>
+    </div>
+</div>
+  
+
+
+<div class="social-icons">
+    <a href="https://twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="https://facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="https://youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+</div>
+
+<div id="recommendations-container"></div>
+
+<script src="travel_recommendation.js"></script>
+  
+
+</body>
+</html>

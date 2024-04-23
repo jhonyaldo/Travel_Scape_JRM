@@ -1,0 +1,356 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Color de fondo del header */
+    padding: 10px 20px;
+}
+
+/* logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Ajusta según el tamaño de tu logo */
+    margin-right: 10px;
+}
+
+#logo-text {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* nav Links */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex: 1; /* Esto permite que los enlaces usen todo el espacio disponible */
+}
+
+.right-container {
+  /* Si necesitas añadir contenido aquí, puedes hacerlo */
+  /* De lo contrario, esto actuará como un espaciador */
+  width: auto;
+}
+
+.nav-links li {
+    padding: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #d0f01f;
+    background-color: #056d0ee7;
+}
+
+/* Barra de Busqueda */
+
+.search-container {
+    display: flex;
+    
+}
+
+input[type="text"] {
+    border: none;
+    padding: 8px;
+    border-radius: 15px; /* Bordes redondeados para el cuadro de búsqueda */
+    width: 200px;
+}
+
+/* Boton Search y Clear */
+.search-btn, .clear-btn {
+    border: none;
+    padding: 8px 15px;
+    margin-left: 5px;
+    border-radius: 15px; /* Bordes redondeados para los botones */
+    cursor: pointer;
+    color: white;
+    background-color: #007bff; /* Color de fondo para los botones */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search-btn:hover, .clear-btn:hover {
+    background-color: #0056b3;
+}
+
+.search-icon {
+    position: absolute;
+    right: 190px; /* O el espacio que desees entre el Ã­cono y el borde derecho del input */
+    top: 35px;
+    transform: translateY(-50%);
+    color: #e4129e; /* O el color que corresponda al diseÃ±o */
+    pointer-events: none;
+}
+
+/* Seccion Hero*/
+
+
+.hero-image {
+    background-image: url('img/TravelScapeJRM.webp'); /* Reemplaza con la URL de tu imagen de fondo */
+    height: 100vh; /* O el alto que prefieras */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Importante para posicionar el contenido */
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 20%; /* Ajustado para colocar el contenido en la parte superior */
+    left: 10%; /* Ajustado para alinear a la izquierda */
+    max-width: 300px; /* Ajusta este valor según el ancho de la zona roja */
+  }
+  
+  .hero-text {
+    font-size: 2.5em; /* O el tamaño que prefieras */
+    margin-bottom: 20px; /* Espacio entre el título y el subtexto */
+    color: #ffffff; /* Asegúrate de que el texto se vea sobre tu fondo */
+  }
+  
+  .hero-subtext {
+    font-size: 1em; /* O el tamaño que prefieras */
+    margin-bottom: 30px; /* Espacio entre el subtexto y el botón */
+    color: #ffffff; /* Asegúrate de que el texto se vea sobre tu fondo */
+  }
+  
+/* Seccion Button*/
+
+
+  .book-now-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 20px; /* Esquinas redondeadas para el botón */
+    cursor: pointer;
+    color: white;
+    background-color: #07a01c; /* O el color que prefieras */
+    text-transform: uppercase; /* Estilo opcional para hacer el texto mayúscula */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .book-now-btn:hover {
+    background-color: #87eb04; /* Color más oscuro en el estado hover */
+  }
+  
+
+/* Estilos para los iconos de redes sociales */
+
+.social-icons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px; /* O lo que sea necesario para tu diseño */
+    z-index: 10; /* Asegura que los íconos estén sobre otros elementos */
+  }
+  
+  .social-icon {
+    text-decoration: none;
+    color: white ; /* O el color que coincida con tu diseño */
+    margin: 5px 0; /* Ajusta el espaciado vertical como prefieras */
+    font-size: 24px; /* O el tamaño que prefieras para los iconos */
+  }
+  
+  .social-icon i {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icon:hover i {
+    color: #50fc0d; /* O el color para el hover que prefieras */
+  }
+  
+  /* About */
+  
+  main {
+    background-image: url('img/TravelScapeJRM.webp'); /* Reemplaza con la URL de tu imagen de fondo */
+    height: 100vh; /* O el alto que prefieras */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Importante para posicionar el contenido */
+    
+  }
+
+  /* Intro */
+
+  .about-intro {
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    color: white;
+  
+  }
+
+  .text-about-intro {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Team */
+  .team {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+   
+  }
+  
+  .team-member {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .team-member img {
+    
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%;
+  }
+
+  #Rol{
+    background-color: rgba(5, 143, 28, 0.9);
+    background-size: cover;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+  }
+ 
+  
+/* Responsive styles if needed */
+@media (max-width: 768px) {
+  .team {
+    flex-direction: column;
+  }
+}
+
+/* Contact */
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text-contact {
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+.contact-section {
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+
+#contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50; /* Button color */
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+/* Control sobre el texto del Formulario */
+
+.input-wrapper {
+  margin-bottom: 10px; /* Espacio entre cada input-wrapper */
+  display: flex; /* Activa Flexbox */
+  align-items: center; /* Alinea verticalmente */
+  justify-content: flex-start; /* Alinea horizontalmente al inicio */
+}
+
+.input-wrapper label {
+  margin-right: 10px; /* Espacio entre el label y el input */
+  white-space: nowrap; /* Asegura que el texto del label no se pase a la siguiente línea */
+  flex-shrink: 0; /* Evita que el label se encoja si hay espacio limitado */
+}
+
+/* ... Resto de tu CSS ... */
+
+
+
+
+/* Ajusta el ancho y la posición del contenedor de resultados para que no cubra la barra de búsqueda */
+#recommendations-container {
+  position: fixed;
+  top: 50px; /* Asegúrate de que este valor baje el contenedor lo suficiente para que no cubra la barra de búsqueda */
+  right: 0;
+  width: 300px; /* O el ancho que prefieras, pero que no sea demasiado grande */
+  max-height: calc(100% - 50px); /* Ajusta el alto máximo para que no se superponga con la barra de búsqueda */
+  overflow-y: auto;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: -5px 0 10px rgba(0,0,0,0.2);
+  visibility: hidden; /* Inicialmente no visible */
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+/* Hacer que el contenedor de resultados sea visible una vez que tenga contenido */
+#recommendations-container.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.result-item img {
+  max-width: 200px; /* ancho máximo de la imagen */
+  max-height: 150px; /* altura máxima de la imagen */
+  width: auto; /* mantiene la relación de aspecto en el ancho */
+  height: auto; /* mantiene la relación de aspecto en la altura */
+  display: block; /* elimina espacio extra debajo de la imagen */
+  margin: 0 auto; /* centra la imagen si es más pequeña que el ancho máximo */
+}
